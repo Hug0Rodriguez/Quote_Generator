@@ -1,0 +1,55 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: darkred;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-card {
+  background-color: bisque;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quote-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.quote-author {
+  color: #666666;
+  font-style: italic;
+}
+
+.generate-button {
+  background: #3b82f6;
+  transition: background-color 0.2s;
+}
+
+.generate-button:hover {
+  background-color: #2563eb;
+}
+
+.generate-button:disabled {
+  background-color: #93c5fd;
+}
+
+@media (max-width: 640px) {
+  .quote-card {
+    padding: 1reml;
+  }
+  .quote-text {
+    font-size: 1rem;
+  }
+}
+
+.loading {
+  color: #666666;
+  font-size: 1.25rem;
+}
